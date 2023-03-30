@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -6,28 +7,28 @@
     <meta charset="utf-8">
 
     <!-- External CSS libraries -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap-submenu.css' %}">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
-    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
-    <link rel="stylesheet" type="text/css"  href="css/slick.css">
-    <link rel="stylesheet" type="text/css"  href="css/lightbox.min.css">
-    <link rel="stylesheet" type="text/css"  href="css/jnoty.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/fonts/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/fonts/linearicons/style.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'website/css/jquery.mCustomScrollbar.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'website/css/dropzone.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'website/css/slick.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'website/css/lightbox.min.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'website/css/jnoty.css' %}">
 
     <!-- Custom stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/yellow.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/sidebar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="{% static 'website/css/skins/yellow.css' %}">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}" type="image/x-icon" >
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,11 +36,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/ie10-viewport-bug-workaround.css' %}">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script  src="js/ie-emulation-modes-warning.js"></script>
+    <script  src="{% static 'website/js/ie-emulation-modes-warning.js' %}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -53,7 +54,7 @@
 <!-- Top header start -->
 <header class="top-header bg-active" id="top-header-2">
     <div class="container">
-        <div class="row">
+        <div class="row">meme
             <div class="col-lg-6 col-md-8 col-sm-7">
                 <div class="list-inline">
                     <a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Need Support? 1-8X0-666-8X88</a>
@@ -63,10 +64,7 @@
             <div class="col-lg-6 col-md-4 col-sm-5">
                 <ul class="top-social-media pull-right">
                     <li>
-                        <a href="login.html" class="sign-in"><i class="fa fa-sign-in"></i> Login</a>
-                    </li>
-                    <li>
-                        <a href="signup.html" class="sign-in"><i class="fa fa-user"></i> Register</a>
+                    
                     </li>
                 </ul>
             </div>
@@ -80,25 +78,18 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand company-logo-2" href="index.html">
-                <img src="img/logos/black-logo.png" alt="logo">
+                <img src="{% static 'website/img/logos/black-logo.png' %}" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" id="drawer">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-                            <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
-                            <li><a class="dropdown-item" href="index-3.html">Home 3</a></li>
-                            <li><a class="dropdown-item" href="index-4.html">Home 4</a></li>
-                            <li><a class="dropdown-item" href="index-5.html">Home 5</a></li>
-                            <li><a class="dropdown-item" href="index-6.html">Home 6</a></li>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -107,95 +98,22 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">List Layout</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-list-rightside.html">List Right Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-list-leftsidebar.html">List Left Sidebar</a></li>
+                                  
                                     <li><a class="dropdown-item" href="car-list-fullWidth.html">List FullWidth</a></li>
                                 </ul>
-                            </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Grid Layout</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-grid-rightside.html">Grid Right Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-grid-leftside.html">Grid Left Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-grid-fullWidth.html">Grid FullWidth</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Car Details</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-details.html">Car Details 1</a></li>
-                                    <li><a class="dropdown-item" href="car-details-2.html">Car Details 2</a></li>
-                                    <li><a class="dropdown-item" href="car-details-3.html">Car Details 3</a></li>
-                                </ul>
+                            
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown megamenu-li">
-                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                            <div class="megamenu-area">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="about.html">About Us</a>
-                                            <a class="dropdown-item" href="team.html">Team</a>
-                                            <a class="dropdown-item" href="team-detail.html">Team Details</a>
-                                            <a class="dropdown-item" href="services.html">Services</a>
-                                            <a class="dropdown-item" href="services-2.html">Services 2</a>
-                                            <a class="dropdown-item" href="car-comparison.html">Car Compare</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a>
-                                            <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                            <a class="dropdown-item" href="typography.html">Typography</a>
-                                            <a class="dropdown-item" href="elements.html">Elements</a>
-                                            <a class="dropdown-item" href="faq.html">Faq</a>
-                                            <a class="dropdown-item" href="search-brand.html">Car Brands</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="icon.html">Icons</a>
-                                            <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
-                                            <a class="dropdown-item" href="404.html">Error Page</a>
-                                            <a class="dropdown-item" href="login.html">login</a>
-                                            <a class="dropdown-item" href="signup.html">Register</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                            <li><a class="dropdown-item" href="blog-sidebar.html">Blog Sidebar</a></li>
-                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Shop
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="shop-list.html">Shop List</a></li>
-                            <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
-                            <li><a class="dropdown-item" href="shop-checkout.html">Shop Checkout</a></li>
-                            <li><a class="dropdown-item" href="shop-details.html">Shop Details</a></li>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#full-page-search" class="nav-link h-icon">
-                            <i class="fa fa-search"></i>
+                
                         </a>
                     </li>
                 </ul>
@@ -360,7 +278,7 @@
         <div class="breadcrumb-areas">
             <h1>Contact Us</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li class="active">Contact Us</li>
             </ul>
         </div>
@@ -372,10 +290,7 @@
 <div class="contact-1 content-area-20">
     <div class="container">
         <!-- Main title -->
-        <div class="main-title text-center">
-            <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-        </div>
+        
         <div class="row g-0 contact-innner">
             <div class="col-lg-7 col-md-12">
                 <div class="contact-form">
@@ -430,7 +345,7 @@
                         </div>
                         <div class="detail align-self-center">
                             <h4>Address</h4>
-                            <p>Moonshine St. 14/05 Light City, London, United Kingdom</p>
+                            <p>Luton, Bedfordshire, LU2 8DL</p>
                         </div>
                     </div>
                     <div class="ci-box d-flex mb-30">
@@ -440,10 +355,10 @@
                         <div class="detail align-self-center">
                             <h4>Phone Number</h4>
                             <p>
-                                <a href="tel:0477-0477-8556-552">+0477 8556 552</a>
+                                <a href="tel:0477-0477-8556-552">+447493663243</a>
                             </p>
                             <p>
-                                <a href="tel:0477-0477-8556-552">+0422 8552 588</a>
+                                <a href="tel:0477-0477-8556-552">+447493663243</a>
                             </p>
                         </div>
                     </div>
@@ -454,10 +369,10 @@
                         <div class="detail align-self-center">
                             <h4>Email Address</h4>
                             <p>
-                                <a href="mailto:info@themevessel.com">info@themevessel.com</a>
+                                <a href="mailto:info@themevessel.com">premiumrentals.uk@gmail.com</a>
                             </p>
                             <p>
-                                <a href="mailto:info@themevessel.com">mdsobuzvaddro@gmail.com</a>
+                                <a href="mailto:info@themevessel.com">premiumrentals.uk@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -469,22 +384,13 @@
                                 <div class="tooltip">Facebook</div>
                                 <span><i class="fa fa-facebook"></i></span>
                             </div>
-                            <div class="icon twitter">
-                                <div class="tooltip">Twitter</div>
-                                <span><i class="fa fa-twitter"></i></span>
-                            </div>
+                           
                             <div class="icon instagram">
                                 <div class="tooltip">Instagram</div>
                                 <span><i class="fa fa-instagram"></i></span>
                             </div>
-                            <div class="icon github">
-                                <div class="tooltip">Github</div>
-                                <span><i class="fa fa-github"></i></span>
-                            </div>
-                            <div class="icon youtube mr-0">
-                                <div class="tooltip">Youtube</div>
-                                <span><i class="fa fa-youtube"></i></span>
-                            </div>
+                            
+                           
                         </div>
                     </div>
                 </div>
@@ -494,13 +400,7 @@
 </div>
 <!-- Contact 1 end -->
 
-<!-- Google map start -->
-<div class="section">
-    <div class="map">
-        <div id="map" class="contact-map"></div>
-    </div>
-</div>
-<!-- Google map end -->
+
 
 <!-- Footer start -->
 <footer class="footer">
@@ -512,25 +412,7 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <div class="subscribe-newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <h3>Subscribe Newsletter</h3>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="Subscribe-box">
-                        <div class="newsletter-content-wrap">
-                            <form class="newsletter-form d-flex" action="#">
-                                <input class="form-control" type="email" id="email" placeholder="Email Address...">
-                                <button class="btn btn-theme" type="submit"><i class="fa fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <div class="clearfix"></div>
     <div class="footer-inner">
         <div class="container">
@@ -541,7 +423,7 @@
                         <div class="s-border"></div>
                         <div class="m-border"></div>
                         <div class="text">
-                            <P class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat.</P>
+                            <P class="mb-0">Premium Rentals is a company that provides leasing and renting. We are one of the most respected companies in Uk. We are one of the best companies in this domain!</P>
                         </div>
                     </div>
                 </div>
@@ -554,16 +436,16 @@
                         <div class="m-border"></div>
                         <ul class="contact-info">
                             <li>
-                                <i class="flaticon-pin"></i>Address: 44 New Design Street,
+                                <i class="flaticon-pin"></i>Address: Luton, Bedfordshire, LU2 8DL
                             </li>
                             <li>
-                                <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">info@themevessel.com</a>
+                                <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">premiumrentals.uk@gmail.com</a>
                             </li>
                             <li>
-                                <i class="flaticon-phone"></i><a href="tel:+55-417-634-7071">+0477 85X6 552</a>
+                                <i class="flaticon-phone"></i><a href="tel:+447493663243">+447493663243</a>
                             </li>
                             <li>
-                                <i class="flaticon-fax"></i>+0477 85X6 552
+                                <i class="flaticon-fax"></i>+447493663243
                             </li>
                         </ul>
                     </div>
@@ -577,26 +459,18 @@
                         <div class="m-border"></div>
                         <ul class="links">
                             <li>
-                                <a href="#"><i class="fa fa-angle-right"></i>Home</a>
+                                <a href="home.html"><i class="fa fa-angle-right"></i>Home</a>
                             </li>
+                           
+                            
                             <li>
-                                <a href="about.html"><i class="fa fa-angle-right"></i>About Us</a>
+                                <a href="car-list-fullWidth.html"><i class="fa fa-angle-right"></i>Car Listing</a>
                             </li>
-                            <li>
-                                <a href="services.html"><i class="fa fa-angle-right"></i>Services</a>
-                            </li>
-                            <li>
-                                <a href="car-list-rightside.html"><i class="fa fa-angle-right"></i>Car Listing</a>
-                            </li>
-                            <li>
-                                <a href="blog-details.html"><i class="fa fa-angle-right"></i>Blog</a>
-                            </li>
+                            
                             <li>
                                 <a href="contact.html"><i class="fa fa-angle-right"></i>Contact Us</a>
                             </li>
-                            <li>
-                                <a href="elements.html"><i class="fa fa-angle-right"></i>Elements</a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -608,22 +482,22 @@
                             <div class="m-border"></div>
                             <ul>
                                 <li>
-                                    <img src="img/car/small-car-1.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car1.jpg' %}" alt="small-img">
                                 </li>
                                 <li>
-                                    <img src="img/car/small-car-2.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car2.jpg' %}" alt="small-img">
                                 </li>
                                 <li>
-                                    <img src="img/car/small-car-3.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car3.jpg' %}" alt="small-img">
                                 </li>
                                 <li>
-                                    <img src="img/car/small-car-4.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car4.jpg' %}" alt="small-img">
                                 </li>
                                 <li>
-                                    <img src="img/car/small-car-5.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car5.jpg' %}" alt="small-img">
                                 </li>
                                 <li>
-                                    <img src="img/car/small-car-6.png" alt="small-img">
+                                    <img src="{% static 'website/img/car/car6.jpg' %}" alt="small-img">
                                 </li>
                             </ul>
                         </div>
@@ -645,22 +519,13 @@
                                 <div class="tooltip">Facebook</div>
                                 <span><i class="fa fa-facebook"></i></span>
                             </div>
-                            <div class="icon twitter">
-                                <div class="tooltip">Twitter</div>
-                                <span><i class="fa fa-twitter"></i></span>
-                            </div>
+                            
                             <div class="icon instagram">
                                 <div class="tooltip">Instagram</div>
-                                <span><i class="fa fa-instagram"></i></span>
+                                <a href="https://www.instagram.com/premiumrentals.uk/">  <i class="fa fa-instagram"> </i></span></a>
                             </div>
-                            <div class="icon github">
-                                <div class="tooltip">Github</div>
-                                <span><i class="fa fa-github"></i></span>
-                            </div>
-                            <div class="icon youtube mr-0">
-                                <div class="tooltip">Youtube</div>
-                                <span><i class="fa fa-youtube"></i></span>
-                            </div>
+                           
+                            
                         </div>
                     </div>
                 </div>
@@ -679,32 +544,32 @@
     </form>
 </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script  src="js/bootstrap-submenu.js"></script>
-<script  src="js/rangeslider.js"></script>
-<script  src="js/jquery.mb.YTPlayer.js"></script>
-<script  src="js/bootstrap-select.min.js"></script>
-<script  src="js/jquery.easing.1.3.js"></script>
-<script  src="js/jquery.scrollUp.js"></script>
-<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script  src="js/dropzone.js"></script>
-<script  src="js/slick.min.js"></script>
-<script  src="js/jquery.filterizr.js"></script>
-<script  src="js/jquery.magnific-popup.min.js"></script>
-<script  src="js/jquery.countdown.js"></script>
-<script  src="js/jquery.mousewheel.min.js"></script>
-<script  src="js/lightgallery-all.js"></script>
-<script  src="js/jnoty.js"></script>
-<script  src="js/sidebar.js"></script>
-<script  src="js/app.js"></script>
+<script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.min.js' %}"></script>
+<script src="{% static 'website/js/popper.min.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+<script  src="{% static 'website/js/bootstrap-submenu.js' %}"></script>
+<script  src="{% static 'website/js/rangeslider.js' %}"></script>
+<script  src="{% static 'website/js/jquery.mb.YTPlayer.js' %}"></script>
+<script  src="{% static 'website/js/bootstrap-select.min.js' %}"></script>
+<script  src="{% static 'website/js/jquery.easing.1.3.js' %}"></script>
+<script  src="{% static 'website/js/jquery.scrollUp.js' %}"></script>
+<script  src="{% static 'website/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script  src="{% static 'website/js/dropzone.js' %}"></script>
+<script  src="{% static 'website/js/slick.min.js' %}"></script>
+<script  src="{% static 'website/js/jquery.filterizr.js' %}"></script>
+<script  src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+<script  src="{% static 'website/js/jquery.countdown.js' %}"></script>
+<script  src="{% static 'website/js/jquery.mousewheel.min.js' %}"></script>
+<script  src="{% static 'website/js/lightgallery-all.js' %}"></script>
+<script  src="{% static 'website/js/jnoty.js' %}"></script>
+<script  src="{% static 'website/js/sidebar.js' %}"></script>
+<script  src="{% static 'website/js/app.js' %}"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<script  src="{% static 'website/js/ie10-viewport-bug-workaround.js' %}"></script>
 <!-- Custom javascript -->
-<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<script  src="{% static 'website/js/ie10-viewport-bug-workaround.js' %}"></script>
 
 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4omYJlOaP814WDcCG8eubXcbhB-44Uac"></script>
 <script>
